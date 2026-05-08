@@ -1,0 +1,37 @@
+:root {
+  --color-bg: #1E3A8A;
+  --color-surface: #3B82F6;
+  --color-accent: #FBBF24;
+  --color-text: #F8FAFC;
+  --color-text-on-accent: #1E3A8A;
+  --color-win: #10B981;
+  --color-lose: #EF4444;
+}
+body{
+    background: var(--color-bg);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically */
+  min-height: 100vh;         /* 👈 this is the key line */
+}
+a {
+  display: inline-flex;        /* makes width/height work */
+  align-items: center;          /* vertically centers the text inside */
+  justify-content: center;      /* horizontally centers the text inside */
+  
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  text-decoration: none;        /* removes the underline links have */
+  
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 2rem;              /* make the text bigger */
+  
+  padding: 30px 60px;
+  border: 3px solid black;
+  border-radius: 100px;         /* pill-shaped button */
+  
+  /* remove fixed width/height — let padding define the size */
+}
